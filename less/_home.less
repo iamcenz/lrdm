@@ -4,12 +4,12 @@
   max-width: 1170px;
   .request-free-quote-box {
     margin: 40px 40px 60px;
-    padding:0;
+    padding: 0;
     background-color: @white;
     > div {
-      padding-top:20px;
+      padding-top: 20px;
       &:last-child {
-        padding-bottom:20px;
+        padding-bottom: 20px;
       }
     }
     .free-quote-header {
@@ -28,17 +28,36 @@
       .form-group {
         margin-bottom: 0;
       }
-      .input-lg+.form-control-feedback {
+      .input-lg + .form-control-feedback {
         color: @silver;
         font-size: x-large;
       }
     }
   }
 }
+@grid-0: #cd3e53;
+@grid-1: #939393;
+@grid-2: #f49e34;
+@grid-3: #75bb6a;
+@grid-4: #42b4ac;
+@grid-5: #63527d;
+@grid-6: #d06725;
+@grid-7: #2e99d5;
+@grid-colors: grid-0, grid-1, grid-2, grid-3, grid-4, grid-5, grid-6, grid-7;
+
+//.example_module {
+//  .for(@colors); .-each(@name) {
+//    &.@{name} {background: @@name}
+//  }
+//}
+
 .home-service-grid {
-  border: 1px solid @silver;
+//  border: 1px solid @silver;
   margin: 10px;
   padding: 20px 0;
+  .for(@grid-colors); .-each(@name) {
+    &.@{name} {background: @@name}
+  }
   .service-grid-text {
     font-family: @archivo;
     @value: return;
@@ -47,6 +66,7 @@
     font-weight: bold;
     padding: 20px 0 10px;
     text-transform: uppercase;
+    color:@white;
   }
 }
 

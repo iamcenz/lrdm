@@ -190,9 +190,32 @@
   font-size: x-large;
 }
 .home-service-grid {
-  border: 1px solid #cccccc;
   margin: 10px;
   padding: 20px 0;
+}
+.home-service-grid.grid-0 {
+  background: #cd3e53;
+}
+.home-service-grid.grid-1 {
+  background: #939393;
+}
+.home-service-grid.grid-2 {
+  background: #f49e34;
+}
+.home-service-grid.grid-3 {
+  background: #75bb6a;
+}
+.home-service-grid.grid-4 {
+  background: #42b4ac;
+}
+.home-service-grid.grid-5 {
+  background: #63527d;
+}
+.home-service-grid.grid-6 {
+  background: #d06725;
+}
+.home-service-grid.grid-7 {
+  background: #2e99d5;
 }
 .home-service-grid .service-grid-text {
   font-family: 'Archivo Narrow', sans-serif;
@@ -200,6 +223,7 @@
   font-weight: bold;
   padding: 20px 0 10px;
   text-transform: uppercase;
+  color: #ffffff;
 }
 .quote-slider {
   margin-top: 40px;
