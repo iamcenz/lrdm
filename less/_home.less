@@ -1,0 +1,116 @@
+.hero {
+  background-image: url('../img/home-hero.jpg');
+  height: 500px;
+  max-width: 1170px;
+  .request-free-quote-box {
+    margin: 40px 40px 60px;
+    padding:0;
+    background-color: @white;
+    > div {
+      padding-top:20px;
+      &:last-child {
+        padding-bottom:20px;
+      }
+    }
+    .free-quote-header {
+      background-color: @fern-green;
+      border-bottom: 1px solid @silver;
+      padding-top: 0;
+      h3 {
+        color: @white;
+        margin-bottom: 20px;
+      }
+    }
+    .free-quote-radio {
+
+    }
+    .free-quote-input {
+      .form-group {
+        margin-bottom: 0;
+      }
+      .input-lg+.form-control-feedback {
+        color: @silver;
+        font-size: x-large;
+      }
+    }
+  }
+}
+.home-service-grid {
+  border: 1px solid @silver;
+  margin: 10px;
+  padding: 20px 0;
+  .service-grid-text {
+    font-family: @archivo;
+    @value: return;
+    .pxtoEm(16);
+    font-size: @@value;
+    font-weight: bold;
+    padding: 20px 0 10px;
+    text-transform: uppercase;
+  }
+}
+
+.quote-slider {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+  height: 180px;
+  /* carousel */
+  #quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 30px;
+
+    /* Changes the position of the indicators */
+    .carousel-indicators {
+      right: 50%;
+      top: auto;
+      bottom: 0px;
+      margin-right: -19px;
+    }
+    /* Changes the color of the indicators */
+    .carousel-indicators {
+      li {
+        background-color: @pearl-bush;
+        height: 15px;
+        width: 15px;
+        margin: 0;
+      }
+      .active {
+        background-color: @gum-leaf;
+      }
+    }
+  }
+  /* End carousel */
+
+  .item blockquote {
+    border-left: none;
+    margin: 0;
+    text-align: center;
+  }
+
+  .item blockquote img {
+    margin-bottom: 10px;
+  }
+
+  .item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    margin-right: 10px;
+  }
+  .item blockquote p:after {
+    content: "\f10e";
+    font-family: 'Fontawesome';
+    margin-left: 10px;
+  }
+}
+.social-icons {
+  display: inline-block;
+  @value: return;
+  .pxtoEm(20);
+  font-size: @@value;
+  img {
+    max-width: 20px;
+    padding:10px 2px;
+
+  }
+}

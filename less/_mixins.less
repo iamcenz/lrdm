@@ -1,0 +1,12 @@
+@base: 16;
+/* mixin for converting PX to EM
+ ex:
+ i{
+    @value: return;
+    .pxtoEm(20);
+    border: @@value;
+}
+ */
+.pxtoEm( @pixel: @base ) {
+  @return: (@pixel / @base) + 0em;
+}
