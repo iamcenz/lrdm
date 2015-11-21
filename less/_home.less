@@ -128,9 +128,61 @@
   @value: return;
   .pxtoEm(20);
   font-size: @@value;
+  margin: 20px 0;
   img {
     max-width: 20px;
     padding:10px 2px;
 
   }
+}
+.bottom-hero {
+  background-image: url('../img/bottom-home-hero.jpg');
+  height: 250px;
+  max-width: 1170px;
+  margin: 0px -15px;
+  font-family: @archivo;
+  text-align: center;
+  color: @white;
+  margin-bottom: 20px;
+
+  .bottom-hero-text {
+    width: 350px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    .hero-headline {
+      @value: return;
+      .pxtoEm(40);
+      font-size: @@value;
+      font-family: @archivo;
+      text-transform: uppercase;
+    }
+    .hero-date {
+      @value: return;
+      .pxtoEm(60);
+      font-size: @@value;
+      &::before,::after {
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        content: '';
+        width: 30px;
+        height: 20px;
+        position: absolute;
+        left: 0;
+        top: 145px;
+      }
+      &::after {
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        content: '';
+        width: 30px;
+        height: 20px;
+        position: absolute;
+        right: 0;
+        top: 145px;
+      }
+    }
+  }
+
 }
